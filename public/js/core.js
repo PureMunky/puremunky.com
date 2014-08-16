@@ -15,8 +15,12 @@
   PureMunky.controller('MainCtrl', ['$scope', function ($scope) {
     $scope.twitchName = 'puremunky';
 
+    $scope.twitch = {
+      live: false
+    };
+
     $scope.twitchLive = function () {
-      return false;
+      return $scope.twitch.live;
     };
 
   }]);
